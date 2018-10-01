@@ -1,0 +1,11 @@
+event:
+  name: Front in Floripa 2018
+  description: Maior evento front-end de Santa Catarina
+  url: "http://www.frontinfloripa.com.br"
+
+tickets:
+  url: "https://www.sympla.com.br/front-in-floripa-2018__366076"
+
+forms:
+  sponsor: "https://goo.gl/forms/PLmWlvp5dvmNOuOa2"
+  call4paper: "https://goo.gl/forms/BcKyDls7SgQYua0z2"

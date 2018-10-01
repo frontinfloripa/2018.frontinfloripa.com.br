@@ -1,0 +1,142 @@
+.header
+  height 100%
+  position relative
+  overflow hidden
+  padding 3em
+  background $color-default
+
+  +below('phone')
+    padding 1.6em
+
+  &:after
+    content ''
+    position absolute
+    top 15%
+    left -40px
+    display block
+    width 300px
+    height 100px
+    bg('img', 'line1-green.svg')
+    background-position 0 0
+
+    +below('phone')
+      top 10%
+      left -53px
+
+  &-wrapper
+    position relative
+    height 100%
+    bg('img', 'bg-teste.jpg')
+    background-position left bottom
+    background-color #fff
+    background-size 100% auto
+    display flex
+    align-items center
+    justify-content center
+    overflow hidden
+
+    &:after
+      content ''
+      position absolute
+      bottom 7%
+      right 5%
+      display block
+      width 140px
+      height 150px
+      bg('img', 'triangle-green.svg')
+      background-position 0 0
+
+      +below('phone')
+        right -60px
+        bottom @right
+
+  &-content
+    wrapper()
+    width 100%
+    display flex
+    z-index 1
+    margin-top -5em
+
+    &__logo
+      flex-basis 40%
+
+    &__text
+      flex 1
+
+    +below('phone')
+      display block
+      text-align center
+
+  &-logo
+    position relative
+    margin 0 auto
+    padding 0
+    width 270px
+    height @width
+    text-indent -9999em
+    bg('svg', 'logo-color.svg')
+    background-size 100% auto
+
+    +below('phone')
+      width 200px
+      height @width
+
+  &-title
+    margin .2em 0 0
+    line-height 1.3
+    font-size 4.5rem
+    color $color-default
+    font-family $font-title
+    font-weight 900
+
+    +below('phone')
+      display none
+
+  &-date
+    margin .5em 0 1em
+    padding .3em 0 .2em
+    line-height 1.5
+    font-family $font-title
+    font-size 2.6rem
+    font-weight bold
+    color $color-text
+    text-transform uppercase
+
+    +below('phone')
+      margin-bottom .5em
+
+    .divisor
+      display inline-block
+      bg('img', 'dots3.svg')
+      background-repeat repeat
+      background-size 40px
+      width 50px
+      height 20px
+
+  &-extra
+    position absolute
+    top 12%
+    right 7%
+
+    +below('phone')
+      position static
+      margin-top 3em
+
+    &__link
+      position relative
+      display inline-block
+      font-size 1.4rem
+      color $color-default
+      text-transform uppercase
+      text-decoration none
+      font-weight bold
+      padding .3em 0
+      margin 0 1em
+      transition box-shadow .3s ease
+      box-shadow 0 2px 0 $color-primary
+
+      &:hover
+        box-shadow 0 4px 0 $color-primary
+
+      +below('phone')
+        margin 0 .6em

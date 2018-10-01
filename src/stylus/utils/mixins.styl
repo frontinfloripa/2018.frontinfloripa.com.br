@@ -1,0 +1,38 @@
+bg($path, $file)
+  background-image url($path-assets + $path + '/' + $file)
+  background-position center
+  background-repeat no-repeat
+
+logo-ratio($new-width)
+  $base-width = 700px
+  $base-height = 300px
+  width $new-width
+  height ($base-height / $base-width) * $new-width
+
+wrapper()
+  max-width $wrapper-size
+  padding 0 2em
+  margin 0 auto
+
+text-rotate()
+  transform skew(-4deg) rotate(-4deg)
+
+text-form()
+  font-family $font-default
+  font-size 1.6rem
+  outline 0
+  padding .4em
+  border 0
+
+list-reset()
+  padding 0
+  margin 0
+  list-style none
+
+text-gradient()
+  display inline-block
+  background-clip text
+  -webkit-background-clip text
+  background-size cover
+  text-fill-color transparent
+  -webkit-text-fill-color transparent

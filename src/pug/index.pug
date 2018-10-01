@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+
+    title #{config.event.name} &bull; #{config.event.description}
+
+    meta(name='description' content=`${config.event.name} - ${config.event.description}`)
+    meta(name='keywords' content='desenvolvedor frontend, desenvolvedor front-end, front-end em florianópolis, eventos de front-end em florianópolis, frontinfloripa, frontinfloripa 2018, eventos de desenvolvimento, desenvolvimento, front-end, html, html5, css3, css, javascript, js')
+
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png")
+    link(rel="manifest" href="assets/favicons/site.webmanifest")
+    link(rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#262626")
+    link(rel="shortcut icon" href="assets/favicons/favicon.ico")
+    meta(name="msapplication-TileColor" content="#262626")
+    meta(name="msapplication-config" content="assets/favicons/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+
+    meta(property='og:locale' content='pt_BR')
+    meta(property='og:url' content=`${config.event.url}`)
+    meta(property='og:type' content='website')
+    meta(property='og:title' content=`${config.event.name}`)
+    meta(property='og:site_name' content='Front in Floripa')
+    meta(property='og:description' content=`${config.event.description}`)
+    meta(property='og:image' content='http://www.frontinfloripa.com.br/assets/img/social.png')
+
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:title' content=`${config.event.name}`)
+    meta(name='twitter:description' content=`${config.event.description}`)
+    meta(name='twitter:site' content='@frontinfloripa')
+    meta(name='twitter:image' content='http://www.frontinfloripa.com.br/assets/img/social.png')
+
+    link(rel='stylesheet' href='//fonts.googleapis.com/css?family=Inconsolata:400,700')
+    link(rel='stylesheet' href='assets/css/main.css')
+  body
+    header.header
+      .header-wrapper
+        .header-content
+          .header-content__logo
+            .header-logo #{config.event.name}
+          .header-content__text
+            h1.header-title Maior evento front-end de Santa Catarina
+            p.header-date 01/Dez #[span.divisor] Hotel Maria do Mar
+            a.button.button-header(href=`${config.tickets.url}` target="_blank") Comprar Ingresso
+            .header-extra
+              a.header-extra__link(href=`${config.forms.sponsor}` target="_blank") Quero patrocinar
+              a.header-extra__link(href=`${config.forms.call4paper}` target="_blank") Quero palestrar

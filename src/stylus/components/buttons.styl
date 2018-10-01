@@ -1,0 +1,20 @@
+.button
+  position relative
+  display inline-block
+  width auto
+  height auto
+  color $color-default
+  background $color-primary
+  padding .7em 1.6em
+  text-align center
+  font-size 1.8rem
+  font-weight bold
+  text-decoration none
+  text-transform uppercase
+  transition all .3s ease
+  cursor pointer
+  box-shadow 5px 5px 0 $color-default
+
+  &:hover
+    background @background + 5%
+    box-shadow 10px 10px 0 $color-default
