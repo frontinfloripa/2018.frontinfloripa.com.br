@@ -49,3 +49,108 @@ html
             .header-extra
               a.header-extra__link(href=`${config.forms.sponsor}` target="_blank") Quero patrocinar
               a.header-extra__link(href=`${config.forms.call4paper}` target="_blank") Quero palestrar
+
+    section.features
+      .features-wrapper
+        .features-content
+          .features-content__text
+            h2.features-title A melhor experiência de Floripa!
+            p.features-description Desde nossa primeira edição em 2013 fomos moldando e melhorando o evento para chegar nesse formato que acreditamos ser o melhor.
+            p.features-description Em 2017 fizemos um evento diferente de todos. Tivemos um grande lounge com vídeo-game, nerfs, vários puffs, café e snacks. Além disso, fomos um dos primeiros eventos a ter brincadeiras entre as palestras, como Torta na Cara, Imagem e Ação, Tiro ao Alvo, Jokenpo e muito mais. Ahh, também servimos pipoca e bebida para as pessoas sortudas que sentam no divã em frente ao palco.
+            p.features-description Esse ano vamos manter o conceito do evento, sempre focando na experiência e interação entre os participantes!
+            a.button.features-button(href='https://www.facebook.com/pg/frontinfloripa/photos/?tab=album&album_id=944853178986114' target='_blank') Ver fotos de 2017
+          .features-content__images
+            ul.features-images
+              li
+                img(src='assets/img/event-2017_02.jpg')
+              li
+                img(src='assets/img/event-2017_04.jpg')
+              li
+                img(src='assets/img/event-2017_01.jpg')
+              li
+                img(src='assets/img/event-2017_03.jpg')
+
+    section.speakers
+      .speakers-wrapper
+        .speakers-content
+          h2.speakers-title Speakers
+          ul.speakers-list
+            each speaker in speakers
+              li(class=`speaker-item speaker-item--${speaker.status}`)
+                .speaker-item-column__image
+                  .speaker-item-avatar
+                    img(src=`assets/img/speakers/${speaker.avatar}`)
+                .speaker-item-column__content
+                  .speaker-item-column__content-wrapper
+                    h3.speaker-item__title= speaker.name
+                    p.speaker-item__bio= speaker.bio
+                    .speaker-item__social
+                      if speaker.github
+                        a.speaker-item__social-link(href=`https://github.com/${speaker.github}` target='_blank') Github
+                      if speaker.twitter
+                        a.speaker-item__social-link(href=`https://twitter.com/${speaker.twitter}` target='_blank') Twitter
+
+  section.location
+    .location-wrapper
+      .location-column.location-column__content
+        .location-column__content-inner
+          span.location-title &mdash; Location
+          h2.location-venue Hotel Maria do Mar
+          address.location-address Rodovia João Paulo, 2285 #[br] Bairro João Paulo #[br] Florianópolis - SC - Brasil
+          a.button.location-button(href='https://goo.gl/maps/ty539BmfZM82' target='_blank') Como chegar
+      .location-column.location-column__image
+
+  section.schedule
+    .schedule-wrapper
+      .schedule-content
+        h2.schedule-title Schedule
+        ul.schedule-list
+          each event in schedule
+            li(class=`schedule-item schedule-item__${event.type}`)
+              .schedule-column__time
+                span.schedule-item__time= event.time
+              .schedule-column__content
+                .schedule-column__content-inner
+                  h3.schedule-item__title= event.title
+                  if event.talk
+                    p.schedule-item__description= event.talk
+        p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
+
+  section.tickets
+    .tickets-wrapper
+      .tickets-content
+        h2.tickets-title Tickets
+        ul.tickets-list
+          each ticket in tickets
+            li(class=`ticket-item ticket-item--${ticket.open}`)
+              h3.ticket-item__title= ticket.title
+              p.ticket-item__date= ticket.date
+              p.ticket-item__obs Ou até esgotar
+              p.ticket-item__price= `R$ ${ticket.value}`
+              .ticket-item__button
+                a.button(href=`${config.tickets.url}` target='_blank') Comprar
+
+  section.support
+    .support-wrapper
+      .support-content
+        h2.support-title Patrocínio
+        .support-help
+          a.button.support-button(href=`${config.forms.sponsor}` target="_blank") Quero Patrocinar
+        h2.support-title.support-title--apoio Apoio
+        ul.support-list.support-list--apoio
+          each item in support
+            li.support-item
+              a.support-link(href=`${item.website}` target='_blank')
+                img(src=`assets/img/support/${item.logo}`)
+
+  footer.footer
+    .footer-wrapper
+      .footer-content
+        .footer-column.footer-column--coc
+          a.footer-link(href='https://braziljs.org/coc/' target='_blank') Código de Conduta
+        .footer-column.footer-column--email
+          span.footer-text contato@frontinfloripa.com.br
+        .footer-column.footer-column--social
+          a.footer-link(href='https://github.com/frontinfloripa' target='_blank') Github
+          a.footer-link(href='https://twitter.com/frontinfloripa' target='_blank') Twitter
+          a.footer-link(href='https://fb.com/frontinfloripa' target='_blank') Facebook

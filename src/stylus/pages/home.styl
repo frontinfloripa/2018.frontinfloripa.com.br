@@ -3,10 +3,10 @@
   position relative
   overflow hidden
   padding 3em
-  background $color-default
 
   +below('phone')
     padding 1.6em
+    height 600px
 
   &:after
     content ''
@@ -140,3 +140,729 @@
 
       +below('phone')
         margin 0 .6em
+
+.features
+  position relative
+  overflow hidden
+  padding 0 3em
+
+  +below('phone')
+    padding 0 1.6em
+
+  &-wrapper
+    position relative
+    padding 15em 0 12em
+    background #fff
+
+    +below('phone')
+      padding 10em 0
+
+  &-content
+    wrapper()
+    display flex
+
+    +below('tablet')
+      display block
+
+    &__text,
+    &__images
+      flex 1
+
+    &__images
+      display flex
+      align-items center
+
+  &-title
+    position relative
+    margin 0
+    padding 0
+    font-size 4em
+    line-height 1.4
+    color $color-default
+    font-family $font-title
+
+    +below('phone')
+      font-size 3.3em
+
+    &:before
+      content ''
+      position absolute
+      top -30%
+      left 0
+      display block
+      width 300px
+      height 100px
+      bg('img', 'wave1.svg')
+      background-position 0 0
+
+  &-description
+    margin 1.6em 0
+    padding 0
+    font-size 1.5em
+    line-height 1.8
+    color $color-text
+    max-width 90%
+
+  &-button
+    font-size 1.6em
+    background $color-default
+    color #fff
+    box-shadow 5px 5px 0 #eee
+
+    &:hover
+      background $color-default
+      box-shadow 10px 10px 0 #eee
+
+  &-images
+    list-reset()
+    position relative
+    padding-left 3em
+    display flex
+    flex-wrap wrap
+
+    +below('tablet')
+      margin-top 6em
+      padding-left 0
+
+    &:before
+      content ''
+      position absolute
+      top 50%
+      left 50%
+      width 280px
+      height @width
+      margin-left -(@width / 2)
+      margin-top -(@width / 2)
+      background $color-primary
+      z-index 1
+      border-radius 50%
+
+      +below('phone')
+        $ball-size = 200px
+        width $ball-size
+        height $ball-size
+        margin-left -100px
+        margin-top -100px
+
+    li
+      flex-basis 50%
+      height auto
+      z-index 10
+
+      &:nth-child(even)
+        margin-top 3em
+        margin-left -2em
+        margin-bottom 2em
+
+      &:nth-child(3)
+        z-index 15
+
+      img
+        max-width 100%
+        height auto
+        border-radius 2px
+        box-shadow 0 0 30px rgba($color-default, .1)
+
+.speakers
+  padding 3em
+
+  +below('phone')
+    padding 3em 1.6em
+
+  &-wrapper
+    background #fff
+    padding 14em 0
+
+    +below('phone')
+      padding 6em 0
+
+  &-content
+    wrapper()
+
+  &-title
+    position relative
+    margin 0
+    padding 0
+    font-size 5em
+    line-height 1.4
+    color $color-default
+    font-family $font-title
+    text-align center
+
+    +below('phone')
+      font-size 4em
+
+    &:before,
+    &:after
+      content ''
+      display inline-block
+      width 120px
+      height 35px
+      margin 0 .3em
+      vertical-align middle
+      bg('img', 'wave3.svg')
+      background-position 0 0
+      background-size 100% auto
+
+      +below('phone')
+        width 100%
+        background-position center
+        background-size 50px auto
+        margin 0
+
+  &-list
+    list-reset()
+    margin-top 10em
+    display flex
+    flex-wrap wrap
+
+    +below('tablet')
+      margin-top 6em
+      display block
+
+  .speaker-item
+    flex-basis 50%
+    padding-right 2em
+    display flex
+    padding-bottom 10em
+
+    &:hover
+      img
+        filter none
+
+    &.speaker-item--off
+      opacity .2
+
+      & *
+        filter grayscale(100%)
+
+    &-column
+      &__image
+        position relative
+        flex-basis 38%
+
+        &:before
+          content ''
+          position absolute
+          top 20px
+          background $color-primary
+          width 40px
+          height 3px
+          z-index 10
+          left -(@width / 2)
+
+          +below('phone')
+            width 20px
+            left -10px
+
+        img
+          filter grayscale(100%)
+          max-width 100%
+          transition filter .5s ease
+
+      &__content
+        flex 1
+        padding-left 1em
+        display flex
+        align-items center
+        flex-wrap wrap
+
+    &-avatar
+      position relative
+
+      &:after
+        content ''
+        position absolute
+        left -10px
+        right -10px
+        bottom -20px
+        transform rotate(-3deg)
+        background #fff
+        height 30px
+
+    &__title
+      margin 0
+      padding 0
+      font-size 3em
+      font-weight bold
+      background $color-default
+      color #fff
+      text-transform uppercase
+      padding .3em .6em
+      line-height 1
+      display inline-block
+      text-rotate()
+
+    &__bio
+      margin .3em 0
+      padding 0
+      font-size 1.6em
+      font-weight bold
+      color #ccc
+      text-transform uppercase
+      padding .6em 0 .3em 1em
+      line-height 1
+      text-rotate()
+
+    &__social
+      padding-top 1em
+      padding-left 1.3em
+      text-rotate()
+
+      &-link
+        margin 0 .2em
+        padding .2em .4em
+        background $color-primary
+        color $color-default
+        text-decoration none
+        font-size 1.3em
+
+        &:hover
+          box-shadow 2px 2px 0 $color-default
+          transition box-shadow .5s ease
+
+.location
+  position relative
+  overflow hidden
+  padding 0 3em
+
+  &:after
+    content ''
+    top 10em
+    right 1em
+    position absolute
+    width 120px
+    height 200px
+    bg('img', 'multiple-waves.svg')
+    background-position 0 0
+    background-size 100% auto
+    z-index 10
+
+    +below('phone')
+      display none
+
+  +below('phone')
+    padding 0 1.6em
+
+  &-wrapper
+    position relative
+    background $color-primary
+    display flex
+
+    &:hover
+      .location-column__image
+        filter none
+
+  &-column
+    flex 1
+
+    &__image
+      position relative
+      bg('img', 'hotel-maria-do-mar_skyline.jpg')
+      background-size cover
+      filter grayscale(100%)
+      transition filter .5s ease
+
+      +below('phone')
+        display none
+
+    &__content
+      padding 9em 0 9em 2em
+      display flex
+      justify-content flex-end
+
+      +below('phone')
+        padding 5em 0 7em 2em
+
+      &-inner
+        flex-basis ($wrapper-size / 2)
+
+  &-title
+    font-size 1.6em
+    text-transform uppercase
+    font-weight bold
+    color $color-default
+    display block
+    margin .8em 0
+
+  &-venue
+    margin .2em 0
+    font-size 4em
+    font-weight bold
+    font-family $font-title
+    color $color-default
+    letter-spacing -.03em
+
+    +below('phone')
+      font-size 3em
+
+  &-address
+    margin 0
+    line-height 1.4
+    font-size 1.6em
+    font-style normal
+    color $color-default
+    letter-spacing -.03em
+
+  &-button
+    margin-top 1.4em
+    background $color-default
+    box-shadow 3px 3px 0 #fff
+    color #fff
+    font-size 1.4em
+
+    &:hover
+      background $color-default
+      box-shadow 6px 6px 0 #fff
+
+.schedule
+  padding 3em
+
+  +below('phone')
+    padding 3em 1.6em
+
+  &-wrapper
+    background #fff
+    padding 10em 0
+
+    +below('phone')
+      padding 6em 0
+
+  &-content
+    wrapper()
+    max-width 900px
+
+  &-title
+    font-size 4em
+    text-transform uppercase
+    font-weight bold
+    font-family $font-title
+    color $color-default
+    display block
+    margin .8em 0
+    text-align center
+
+  &-list
+    list-reset()
+    padding-top 4em
+
+  &-item
+    display flex
+    padding 2em 0
+
+    &.schedule-item__talk
+      .schedule-item__title
+        color $color-primary - 20%
+
+      .schedule-item__time
+        visibility hidden
+
+    &__time
+      position relative
+      line-height 1
+      font-size 2.6em
+      padding .2em .3em
+      background $color-default
+      color #fff
+      display inline-block
+
+      &:after
+        content ''
+        display block
+        position absolute
+        top 18px
+        left 100%
+        width 80%
+        height 2px
+        background $color-default
+
+        +below('tablet')
+          width 40%
+
+        +below('phone')
+          display none
+
+    &__title
+      margin 0
+      padding 0
+      font-size 2.8em
+      font-weight bold
+      font-family $font-title
+      color $color-default
+      text-indent -1px
+      line-height 1
+
+      +below('phone')
+        font-size 2.2em
+        line-height 1.4
+
+    &__description
+      margin .5em 0
+      padding 0
+      font-size 1.6em
+      color $color-default
+      line-height 1
+      text-transform uppercase
+
+  &-column__time
+    flex-basis 30%
+    text-align center
+
+    +below('phone')
+      text-align left
+
+  &-column__content
+    flex 1
+    display flex
+    align-items center
+
+    &-inner
+      position relative
+      flex 1
+      max-width 70%
+      z-index 10
+      padding .5em 0
+
+      +below('phone')
+        max-width 100%
+        padding-left 1em
+
+  &-note
+    font-size 1.3em
+    margin 5em 0 0
+    text-align center
+    line-height 1.4
+
+.tickets
+  padding 0 3em
+
+  +below('phone')
+    padding 0 1.6em
+
+  &-wrapper
+    position relative
+    bg('img', 'people.jpg')
+    background-position center
+    background-size cover
+    padding 5em 0 10em
+    z-index 10
+    border 5px solid $color-primary
+
+    &:before
+      content ''
+      display block
+      position absolute
+      left 0
+      right 0
+      top 0
+      bottom 0
+      background rgba(#000, .4)
+      z-index -1
+
+    +below('phone')
+      padding 6em 0
+
+  &-content
+    wrapper()
+
+  &-title
+    margin .5em 0
+    padding 0
+    font-size 5em
+    font-family $font-title
+    color $color-primary
+    text-align center
+
+  &-list
+    list-reset()
+    display flex
+    justify-content center
+
+  .ticket-item
+    padding 3em
+    flex-basis 25%
+    margin 0 2em
+    border 5px solid $color-primary
+
+    +below('tablet')
+      border-color transparent
+      flex-basis 80%
+
+    &--off
+      opacity .2
+      pointer-events none
+      border-color #000
+
+      +below('tablet')
+        display none
+
+      *
+        pointer-events none
+        filter grayscale(100%)
+
+    &__title
+      margin 0
+      color $color-primary
+      font-family $font-title
+      text-align center
+      font-size 2.6em
+      text-transform uppercase
+
+    &__date
+      margin 1em 0 .2em
+      color #fff
+      text-align center
+      font-size 1.8em
+      text-transform uppercase
+
+    &__obs
+      margin .6em 0 .2em
+      color #ccc
+      text-align center
+      font-size 1.2em
+
+    &__price
+      margin .5em 0 .2em
+      color $color-primary
+      text-align center
+      font-size 2.8em
+
+    &__button
+      text-align center
+
+      &:before
+        content ''
+        display block
+        width 1px
+        height 50px
+        background $color-primary
+        margin 2em auto
+
+.support
+  padding 3em
+
+  +below('phone')
+    padding 3em 1.6em
+
+  &-wrapper
+    background #fff
+    padding 10em 0
+
+    +below('phone')
+      padding 6em 0
+
+  &-content
+    wrapper()
+
+  &-title
+    margin .5em 0
+    padding 0
+    font-size 5em
+    font-family $font-title
+    color $color-default
+    text-align center
+
+    &:before,
+    &:after
+      content '-'
+      padding 0 .3em
+      color $color-primary
+
+    +below('phone')
+      font-size 3.6em
+
+  &-list
+    list-reset()
+    padding 4em 0
+    display flex
+    justify-content center
+    align-items center
+    flex-wrap wrap
+    z-index 10
+    position relative
+
+    &.support-list--apoio
+      .support-item
+        margin 1em .5em
+
+      .support-link
+        img
+          max-width 100px
+
+  &-item
+    opacity .9
+    transition opacity .5s ease
+
+    &:hover
+      opacity 1
+
+  &-help
+    padding-top 3em
+    padding-bottom 10em
+    text-align center
+
+  &-button
+    background $color-default
+    color #fff
+    box-shadow 5px 5px 0 #ccc
+
+    &:hover
+      background @background
+      box-shadow 10px 10px 0 #ccc
+
+.footer
+  padding 0 3em
+
+  +below('phone')
+    padding 0 1.6em
+
+  &-wrapper
+    padding 3em 0 5em
+
+    +below('phone')
+      padding 2em 0 3em
+
+  &-content
+    wrapper()
+    display flex
+    max-width 95%
+
+    +below('phone')
+      display block
+      max-width 100%
+
+  &-column
+    flex 1
+
+    +below('phone')
+      padding-bottom 3em
+
+    &--coc
+      +below('phone')
+        text-align center
+
+    &--email
+      text-align center
+
+    &--social
+      text-align right
+
+      +below('phone')
+        text-align center
+
+  &-text
+    color #fff
+    font-size 1.8em
+
+  &-link
+    font-size 1.4em
+    padding .2em .5em
+    margin 0 .5em
+    background #fff
+    color $color-default
+    text-decoration none
+    box-shadow 0 0 0 #000
+    transition box-shadow .5s ease
+
+    &:hover
+      box-shadow 3px 3px 0 $color-primary

@@ -1,0 +1,15 @@
+-
+  title: 'Early Bird'
+  date: '01/Out — 08/Out'
+  value: '75'
+  open: 'off'
+-
+  title: '1º Lote'
+  date: '08/Out — 04/Nov'
+  value: '90'
+  open: 'on'
+-
+  title: '2º Lote'
+  date: '05/Nov — 30/Nov'
+  value: '100'
+  open: 'off'

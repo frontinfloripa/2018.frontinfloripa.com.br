@@ -1,78 +1,68 @@
 -
-  time: 8h
+  time: '08:00'
   type: other
   title: "Credenciamento"
 -
-  time: 9h
+  time: '09:00'
   type: other
   title: "Abertura do Evento"
 -
-  time: 9h
+  time: '00:00'
   type: talk
-  title: "Mario Souto"
-  talk: "O acoplamento, a Mensageria e o Redux no Front-end"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
-  type: talk
-  title: "Paulo Duarte"
-  talk: "What is WebAssembly?"
--
-  time: 10h15
+  time: '10:10'
   type: other
   title: "Coffee Break"
 -
-  time: 9h
+  time: '00:00'
   type: talk
-  title: "Rodrigo Branas"
-  talk: "Do callback ao async/await"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 12h
+  time: '00:00'
+  type: talk
+  title: "A definir"
+  talk: "A definir"
+-
+  time: '12:00'
   type: other
   title: "Almoço"
 -
-  time: 13h50
+  time: '13:50'
   type: other
   title: "Abertura da Tarde"
 -
-  time: 9h
+  time: '00:00'
   type: talk
-  title: "Vinicius Neves"
-  talk: "Como o Javascript funciona"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
+  time: '00:00'
   type: talk
-  title: "Geisy Domiciano"
-  talk: "Como faz pra trampar fora?"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
+  time: '00:00'
   type: talk
-  title: "Fernando Daciuk"
-  talk: "The front-end world: now what?"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
-  type: talk
-  title: "Luís Felipe Souza"
-  talk: "Transformando o seu site em um PWA"
--
-  time: 16h20
+  time: '16:00'
   type: other
   title: "Coffee Break"
 -
-  time: 9h
+  time: '08:00'
   type: talk
-  title: "Fábio Vedovelli"
-  talk: "Vue.js: \"pau pra toda obra\""
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
+  time: '08:00'
   type: talk
-  title: "Rosicleia Frasson"
-  talk: "Não subestime seu CSS"
+  title: "A definir"
+  talk: "A definir"
 -
-  time: 9h
-  type: talk
-  title: "Vinicius Moraes"
-  talk: "Animações avançadas com GSAP"
--
-  time: 18h30
+  time: '18:30'
   type: other
   title: "Encerramento"
