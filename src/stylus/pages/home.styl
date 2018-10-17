@@ -780,6 +780,20 @@
     flex-wrap wrap
     z-index 10
     position relative
+    margin-bottom 6em
+
+    &.support-list--patrocinio
+      padding-top 0
+
+      .support-item
+        margin 3.5em 1em
+
+      .support-link
+        img
+          max-width 330px
+
+          +below('phone')
+            max-width 300px
 
     &.support-list--apoio
       .support-item
@@ -787,7 +801,7 @@
 
       .support-link
         img
-          max-width 100px
+          max-width 80px
 
   &-item
     opacity .9

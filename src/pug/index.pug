@@ -134,8 +134,11 @@ html
     .support-wrapper
       .support-content
         h2.support-title Patrocínio
-        .support-help
-          a.button.support-button(href=`${config.forms.sponsor}` target="_blank") Quero Patrocinar
+        ul.support-list.support-list--patrocinio
+          each item in sponsors
+            li.support-item
+              a.support-link(href=`${item.website}` target='_blank')
+                img(src=`assets/img/sponsors/${item.logo}`)
         h2.support-title.support-title--apoio Apoio
         ul.support-list.support-list--apoio
           each item in support
