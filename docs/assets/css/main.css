@@ -800,6 +800,20 @@ body {
   -ms-transform: skew(-4deg) rotate(-4deg);
   transform: skew(-4deg) rotate(-4deg);
 }
+.speakers .speaker-item__talk {
+  margin: 0.2em 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Objectivity', sans-serif;
+  color: #262626;
+  letter-spacing: -0.03em;
+  padding: 0.4em 0 0.3em 0.8em;
+  line-height: 1.5;
+  -webkit-transform: skew(-4deg) rotate(-4deg);
+  -ms-transform: skew(-4deg) rotate(-4deg);
+  transform: skew(-4deg) rotate(-4deg);
+}
 .speakers .speaker-item__social {
   padding-top: 1em;
   padding-left: 1.3em;
