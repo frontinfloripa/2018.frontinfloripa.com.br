@@ -1319,16 +1319,16 @@ body {
   max-width: 80px;
 }
 .support-item {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  filter: alpha(opacity=90);
-  opacity: 0.9;
+  -ms-filter: none;
+  filter: none;
+  opacity: 1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 .support-item:hover {
-  -ms-filter: none;
-  filter: none;
-  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  opacity: 0.9;
 }
 .support-help {
   padding-top: 3em;
