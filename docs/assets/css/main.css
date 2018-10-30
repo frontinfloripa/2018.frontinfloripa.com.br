@@ -1299,13 +1299,13 @@ body {
   margin-bottom: 6em;
 }
 .support-list.support-list--patrocinio {
-  padding-top: 0;
+  padding-top: 1em;
 }
 .support-list.support-list--patrocinio .support-item {
-  margin: 3.5em 1em;
+  margin: 4em 1em;
 }
 .support-list.support-list--patrocinio .support-link img {
-  max-width: 330px;
+  max-width: 300px;
 }
 @media only screen and (max-width: 580px) {
   .support-list.support-list--patrocinio .support-link img {
@@ -1313,7 +1313,7 @@ body {
   }
 }
 .support-list.support-list--apoio .support-item {
-  margin: 1em 0.5em;
+  margin: 1em 2em 2em 2em;
 }
 .support-list.support-list--apoio .support-link img {
   max-width: 80px;
