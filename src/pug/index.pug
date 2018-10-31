@@ -1,9 +1,9 @@
 doctype html
-html
+html(lang='pt-br')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
     title #{config.event.name} &bull; #{config.event.description}
 
@@ -61,13 +61,13 @@ html
           .features-content__images
             ul.features-images
               li
-                img(src='assets/img/event-2017_02.jpg')
+                img(src='assets/img/event-2017_02.jpg' alt='Brincadeira de torta na cara - edição 2017')
               li
-                img(src='assets/img/event-2017_04.jpg')
+                img(src='assets/img/event-2017_04.jpg' alt='Salão principal do evento - edição 2017')
               li
-                img(src='assets/img/event-2017_01.jpg')
+                img(src='assets/img/event-2017_01.jpg' alt='Foto oficial do evento com todos os participantes - edição 2017')
               li
-                img(src='assets/img/event-2017_03.jpg')
+                img(src='assets/img/event-2017_03.jpg' alt='Lounge com puffs e vídeo games - edição 2017')
 
     section.speakers
       .speakers-wrapper
@@ -78,7 +78,7 @@ html
               li(class=`speaker-item speaker-item--${speaker.status}`)
                 .speaker-item-column__image
                   .speaker-item-avatar
-                    img(src=`assets/img/speakers/${speaker.avatar}`)
+                    img(src=`assets/img/speakers/${speaker.avatar}` alt=`${speaker.name}`)
                 .speaker-item-column__content
                   .speaker-item-column__content-wrapper
                     h3.speaker-item__title= speaker.name
@@ -138,13 +138,13 @@ html
           each item in sponsors
             li.support-item
               a.support-link(href=`${item.website}` target='_blank')
-                img(src=`assets/img/sponsors/${item.logo}`)
+                img(src=`assets/img/sponsors/${item.logo}` alt=`${item.name}`)
         h2.support-title.support-title--apoio Apoio
         ul.support-list.support-list--apoio
           each item in support
             li.support-item
               a.support-link(href=`${item.website}` target='_blank')
-                img(src=`assets/img/support/${item.logo}`)
+                img(src=`assets/img/support/${item.logo}` alt=`${item.name}`)
 
   footer.footer
     .footer-wrapper
