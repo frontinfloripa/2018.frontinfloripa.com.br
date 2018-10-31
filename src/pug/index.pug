@@ -48,7 +48,6 @@ html(lang='pt-br')
             a.button.button-header(href=`${config.tickets.url}` target="_blank") Comprar Ingresso
             .header-extra
               a.header-extra__link(href=`${config.forms.sponsor}` target="_blank") Quero patrocinar
-              a.header-extra__link(href=`${config.forms.call4paper}` target="_blank") Quero palestrar
 
     section.features
       .features-wrapper
@@ -84,6 +83,7 @@ html(lang='pt-br')
                   .speaker-item-column__content-wrapper
                     h3.speaker-item__title= speaker.name
                     p.speaker-item__bio= speaker.bio
+                    p.speaker-item__talk= speaker.talk
                     .speaker-item__social
                       if speaker.github
                         a.speaker-item__social-link(href=`https://github.com/${speaker.github}` target='_blank') Github

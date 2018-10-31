@@ -404,6 +404,18 @@
       line-height 1
       text-rotate()
 
+    &__talk
+      margin .2em 0
+      padding 0
+      font-size 1.8em
+      font-weight bold
+      font-family $font-title
+      color $color-default
+      letter-spacing -.03em
+      padding .4em 0 .3em .8em
+      line-height 1.5
+      text-rotate()
+
     &__social
       padding-top 1em
       padding-left 1.3em
@@ -783,32 +795,32 @@
     margin-bottom 6em
 
     &.support-list--patrocinio
-      padding-top 0
+      padding-top 1em
 
       .support-item
-        margin 3.5em 1em
+        margin 4em 1em
 
       .support-link
         img
-          max-width 330px
+          max-width 300px
 
           +below('phone')
             max-width 300px
 
     &.support-list--apoio
       .support-item
-        margin 1em .5em
+        margin 1em 2em 2em 2em
 
       .support-link
         img
           max-width 80px
 
   &-item
-    opacity .9
+    opacity 1
     transition opacity .5s ease
 
     &:hover
-      opacity 1
+      opacity .9
 
   &-help
     padding-top 3em

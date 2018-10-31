@@ -800,6 +800,20 @@ body {
   -ms-transform: skew(-4deg) rotate(-4deg);
   transform: skew(-4deg) rotate(-4deg);
 }
+.speakers .speaker-item__talk {
+  margin: 0.2em 0;
+  padding: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Objectivity', sans-serif;
+  color: #262626;
+  letter-spacing: -0.03em;
+  padding: 0.4em 0 0.3em 0.8em;
+  line-height: 1.5;
+  -webkit-transform: skew(-4deg) rotate(-4deg);
+  -ms-transform: skew(-4deg) rotate(-4deg);
+  transform: skew(-4deg) rotate(-4deg);
+}
 .speakers .speaker-item__social {
   padding-top: 1em;
   padding-left: 1.3em;
@@ -1285,13 +1299,13 @@ body {
   margin-bottom: 6em;
 }
 .support-list.support-list--patrocinio {
-  padding-top: 0;
+  padding-top: 1em;
 }
 .support-list.support-list--patrocinio .support-item {
-  margin: 3.5em 1em;
+  margin: 4em 1em;
 }
 .support-list.support-list--patrocinio .support-link img {
-  max-width: 330px;
+  max-width: 300px;
 }
 @media only screen and (max-width: 580px) {
   .support-list.support-list--patrocinio .support-link img {
@@ -1299,22 +1313,22 @@ body {
   }
 }
 .support-list.support-list--apoio .support-item {
-  margin: 1em 0.5em;
+  margin: 1em 2em 2em 2em;
 }
 .support-list.support-list--apoio .support-link img {
   max-width: 80px;
 }
 .support-item {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  filter: alpha(opacity=90);
-  opacity: 0.9;
+  -ms-filter: none;
+  filter: none;
+  opacity: 1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 .support-item:hover {
-  -ms-filter: none;
-  filter: none;
-  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  opacity: 0.9;
 }
 .support-help {
   padding-top: 3em;
