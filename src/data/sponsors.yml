@@ -7,13 +7,13 @@
   website: "http://www.linx.com.br/linximpulse/"
   logo: "linximpulse.png"
 -
+  name: "Softplan"
+  website: "https://www.softplan.com.br/"
+  logo: "softplan.png"
+-
   name: "Toptal"
   website: "https://www.toptal.com/"
   logo: "toptal.png"
--
-  name: "D3"
-  website: "https://d3.do"
-  logo: "d3.png"
 -
   name: "GeekHunter"
   website: "https://www.geekhunter.com.br"
@@ -23,14 +23,26 @@
   website: "https://taller.net.br"
   logo: "taller.png"
 -
-  name: "Impulso"
-  website: "http://impulso.network/?utm_source=evento&utm_medium=site&utm_campaign=FrontInFloripa"
-  logo: "impulso.png"
+  name: "D3"
+  website: "https://d3.do"
+  logo: "d3.png"
+-
+  name: "Creditas"
+  website: "https://www.creditas.com.br"
+  logo: "creditas.png"
 -
   name: "Nextt"
   website: "https://www.nextt.com.br"
   logo: "nextt.png"
 -
+  name: "Impulso"
+  website: "http://impulso.network/?utm_source=evento&utm_medium=site&utm_campaign=FrontInFloripa"
+  logo: "impulso.png"
+-
   name: "Apollus"
   website: "http://apollusehs.com.br"
   logo: "apollus.png"
+-
+  name: "Developer Circles"
+  website: "https://developers.facebook.com/developercircles"
+  logo: "developer-circles.png"
