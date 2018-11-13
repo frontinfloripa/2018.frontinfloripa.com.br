@@ -336,6 +336,15 @@
       & *
         filter grayscale(100%)
 
+    &.speaker-item--presenter
+      .speaker-item__title
+        background $color-primary
+        color $color-default
+
+      .speaker-item-column__image
+        &:before
+          display none
+
     &-column
       &__image
         position relative
@@ -612,9 +621,13 @@
       margin .5em 0
       padding 0
       font-size 1.6em
-      color $color-default
+      color #666
       line-height 1
       text-transform uppercase
+      font-weight bold
+
+      +below('phone')
+        line-height 1.4
 
   &-column__time
     flex-basis 30%

@@ -9,22 +9,22 @@
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Larissa Abreu"
+  talk: "Guia prático para criação de componentes perfeitos"
 -
-  time: '10:10'
+  time: '10:00'
   type: other
   title: "Coffee Break"
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Igor Halfeld"
+  talk: "GraphQL... O que o Front-end tem a ver com isso?"
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Rodrigo Branas"
+  talk: "Micro Frontends"
 -
   time: '12:00'
   type: other
@@ -36,18 +36,18 @@
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Pedro Nauck"
+  talk: "Docz: como ganhei 5k stars em 2 semanas!"
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Rafael Dantas"
+  talk: "Leve seu CSS para o futuro com Houdini"
 -
   time: '00:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Wharley Ornelas"
+  talk: "A saga de um DEV - Tudo é possível"
 -
   time: '16:00'
   type: other
@@ -55,14 +55,19 @@
 -
   time: '08:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Felipe Fialho"
+  talk: "Palestra Surpresa"
 -
   time: '08:00'
   type: talk
-  title: "A definir"
-  talk: "A definir"
+  title: "Giulia Cardieri"
+  talk: "O que eu posso aprender com desenhos e jogos em CSS?"
 -
-  time: '18:30'
+  time: '08:00'
+  type: talk
+  title: "Roberto Gripa"
+  talk: "Criando uma extensão Chrome com React"
+-
+  time: '18:15'
   type: other
-  title: "Encerramento"
+  title: "Encerramento & Sorteios"
