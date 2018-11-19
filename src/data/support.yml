@@ -23,13 +23,17 @@
   website: "https://www.casadocodigo.com.br"
   logo: "casa-do-codigo.png"
 -
-  name: "FloripaJS"
-  website: "http://floripajs.org"
-  logo: "floripajs.png"
+  name: "MyTapp"
+  website: "https://mytapp.com.br"
+  logo: "mytapp.png"
 -
   name: "BrazilJS"
   website: "https://braziljs.org"
   logo: "braziljs.png"
+-
+  name: "FloripaJS"
+  website: "http://floripajs.org"
+  logo: "floripajs.png"
 -
   name: "Maria do Mar"
   website: "http://mariadomar.com.br"
