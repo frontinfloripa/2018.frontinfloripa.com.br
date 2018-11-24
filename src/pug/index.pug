@@ -112,6 +112,10 @@ html
                   h3.schedule-item__title= event.title
                   if event.talk
                     p.schedule-item__description= event.talk
+                  if event.show
+                    p.schedule-item__description
+                      a.schedule-item__link(href='https://goo.gl/maps/TGtEzM4u2qq' target='_blank')
+                        span Como chegar no Chopp do Gus
         p.schedule-note Os horários e slots poderão sofrer alterações até o dia do evento.
 
   section.tickets

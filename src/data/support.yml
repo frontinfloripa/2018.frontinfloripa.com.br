@@ -27,9 +27,17 @@
   website: "https://mytapp.com.br"
   logo: "mytapp.png"
 -
+  name: "Brainn.co"
+  website: "https://brainn.co"
+  logo: "brainn.png"
+-
   name: "BrazilJS"
   website: "https://braziljs.org"
   logo: "braziljs.png"
+-
+  name: "StickerDevs"
+  website: "https://www.stickersdevs.com.br"
+  logo: "stickerdevs.png"
 -
   name: "FloripaJS"
   website: "http://floripajs.org"

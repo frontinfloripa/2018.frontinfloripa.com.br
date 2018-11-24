@@ -571,12 +571,52 @@
     display flex
     padding 2em 0
 
+    &.schedule-item__other
+      .schedule-item__description
+        margin-top .8em
+        line-height 1.4
+        text-transform none
+        font-weight normal
+
     &.schedule-item__talk
       .schedule-item__title
         color $color-primary - 20%
 
       .schedule-item__time
         visibility hidden
+
+    &__link
+      position relative
+      display inline-block
+      color #333
+      text-decoration none
+      font-weight bold
+      letter-spacing -.01em
+      margin .7em 0 0
+      padding-left 2em
+
+      &:hover
+        color #000
+
+        span
+          border-color $color-primary
+
+      span
+        border-bottom 2px dotted #ccc
+        padding-bottom .2em
+        transition border .5s ease
+
+      &:before
+        content ''
+        display block
+        position absolute
+        top 2px
+        left 0
+        width 23px
+        height 30px
+        bg('img', 'map-pin.png')
+        background-size 100% auto
+        background-position top
 
     &__time
       position relative

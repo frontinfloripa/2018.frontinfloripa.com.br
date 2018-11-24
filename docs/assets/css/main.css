@@ -1012,11 +1012,53 @@ body {
   display: flex;
   padding: 2em 0;
 }
+.schedule-item.schedule-item__other .schedule-item__description {
+  margin-top: 0.8em;
+  line-height: 1.4;
+  text-transform: none;
+  font-weight: normal;
+}
 .schedule-item.schedule-item__talk .schedule-item__title {
   color: #00ed7f;
 }
 .schedule-item.schedule-item__talk .schedule-item__time {
   visibility: hidden;
+}
+.schedule-item__link {
+  position: relative;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  margin: 0.7em 0 0;
+  padding-left: 2em;
+}
+.schedule-item__link:hover {
+  color: #000;
+}
+.schedule-item__link:hover span {
+  border-color: #29ff9c;
+}
+.schedule-item__link span {
+  border-bottom: 2px dotted #ccc;
+  padding-bottom: 0.2em;
+  -webkit-transition: border 0.5s ease;
+  transition: border 0.5s ease;
+}
+.schedule-item__link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 23px;
+  height: 30px;
+  background-image: url("../img/map-pin.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top;
 }
 .schedule-item__time {
   position: relative;
