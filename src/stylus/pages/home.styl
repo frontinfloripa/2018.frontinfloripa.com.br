@@ -63,6 +63,9 @@
     &__text
       flex 1
 
+      +below('tablet')
+        padding-left 1em
+
     +below('phone')
       display block
       text-align center
@@ -88,6 +91,9 @@
     color $color-default
     font-family $font-title
     font-weight 900
+
+    +below('tablet')
+        font-size 4.2rem
 
     +below('phone')
       display none
@@ -117,6 +123,10 @@
     position absolute
     top 12%
     right 7%
+
+    +below('tablet')
+      top: 5%;
+      right: 3%;
 
     +below('phone')
       position static

@@ -364,6 +364,11 @@ body {
   -ms-flex: 1;
   flex: 1;
 }
+@media only screen and (max-width: 880px) {
+  .header-content__text {
+    padding-left: 1em;
+  }
+}
 @media only screen and (max-width: 580px) {
   .header-content {
     display: block;
@@ -395,6 +400,11 @@ body {
   color: #262626;
   font-family: 'Objectivity', sans-serif;
   font-weight: 900;
+}
+@media only screen and (max-width: 880px) {
+  .header-title {
+    font-size: 4.2rem;
+  }
 }
 @media only screen and (max-width: 580px) {
   .header-title {
@@ -430,6 +440,12 @@ body {
   position: absolute;
   top: 12%;
   right: 7%;
+}
+@media only screen and (max-width: 880px) {
+  .header-extra {
+    top: 5%;
+    right: 3%;
+  }
 }
 @media only screen and (max-width: 580px) {
   .header-extra {
